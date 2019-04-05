@@ -14,6 +14,6 @@ class AdminProductController extends Controller
         return view ('admin.insertProduct');
     }
     public function indexq(){
-        return view ('admin.insertCustomers');
+        return view ('admin.insertCustomer');
     }
 }

@@ -49,11 +49,11 @@ In 2018, January we awarded best growth of the year for MSI notebook.
 
 <aside id="left">
 <link href="{{asset('css/sey.css')}}" rel="stylesheet" />
-<div style="padding: 0 5px;">
+<div style="padding: 0 5px; margin-top: 10%" >
             <h3>LIST MODELS</h3>
              <div class="box">
                <ul>
-                    <li><a href="product">Asus</a></li>
+                    <li><a href="asus">Asus</a></li>
                     <li><a href="msi">MSI</a></li>
                     <li><a href="dell">Dell</a></li>
                     <li><a href="acer">Acer</a></li>

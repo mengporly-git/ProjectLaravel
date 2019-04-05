@@ -12,33 +12,37 @@
 */
 
 // front-end
-	// Route::get('/index','shopcontroller@show');
-	// Route::get('/product','shopcontroller@shows');
-    // Route::get('/msi','shopcontroller@show_msi');
-	// Route::get('/dell','shopcontroller@show_dell');
-	// Route::get('/promotion','shopcontroller@show_promotion');
-	// Route::get('/accessory','shopcontroller@show_accessory');
-	// Route::get('/acer','shopcontroller@show_acer');
-	// Route::get('/hp','shopcontroller@show_hp');
-	// Route::get('/contact','shopcontroller@show_contact');
-	// Route::get('/signup','shopcontroller@show_signup');
-	// Route::get('/allproduct','shopcontroller@show_allproduct');
-	// Route::get('/aboutUs','shopcontroller@show_about');
-	Route::resource('/index','Computercontroller');
-	Route::resource('/allproduct','ProductController');
-	Route::resource('/product','AsusController');
-	Route::resource('/msi','MsiController');
-	Route::resource('/hp','HpController');
-	Route::resource('/dell','DellController');
-	Route::resource('/acer','AcerController');
+// Route::get('/index','shopcontroller@show');
+// Route::get('/product','shopcontroller@shows');
+// Route::get('/msi','shopcontroller@show_msi');
+// Route::get('/dell','shopcontroller@show_dell');
+// Route::get('/promotion','shopcontroller@show_promotion');
+// Route::get('/accessory','shopcontroller@show_accessory');
+// Route::get('/acer','shopcontroller@show_acer');
+// Route::get('/hp','shopcontroller@show_hp');
+// Route::get('/contact','shopcontroller@show_contact');
+// Route::get('/allproduct','shopcontroller@show_allproduct');
+// Route::get('/aboutUs','shopcontroller@show_about');
+Route::resource('/index','Computercontroller');
+Route::resource('/allproduct','ProductController');
+Route::resource('/asus','AsusController');
+Route::resource('/msi','MsiController');
+Route::resource('/hp','HpController');
+Route::resource('/dell','DellController');
+Route::resource('/acer','AcerController');
 
 // back-end
-// 	Route::prefix('admin')->group(function()
-// 	{
-// 		Route::get('/login','AdminProductController@index');
-// 		Route::get('/insertProduct','AdminProductController@indexs');
-// 		Route::get('/insertCustomers','AdminProductController@indexq');
-// });
+	Route::prefix('admin')->group(function()
+	{
+		Route::get('/dashboard', function() 
+		{
+			return view('admin.index');
+		});
+
+		Route::get('/login','AdminProductController@index');
+		Route::get('/insertProduct','AdminProductController@indexs');
+		Route::get('/insertCustomer','AdminProductController@indexq');
+	});
 
 
 

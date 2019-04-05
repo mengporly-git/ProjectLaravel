@@ -18,7 +18,6 @@
   <ul>
   <li><a href="index">Home</a></li>
   <li><a href="allproduct">All Product</a></li>
-  <li><a href="signup">RegisterNow</a></li>
   <li><a href="accessory">Accesory</a></li>
   <li><a href="contact">Contact</a></li>
   <li><a href="aboutUs">About Us</a></li>
@@ -49,11 +48,11 @@
 
 <aside id="left">
 <link href="{{asset('css/sey.css')}}" rel="stylesheet" />
-<div style="padding: 0 5px;">
+<div style="padding: 0 5px; margin-top: 10%" >
             <h3>LIST MODELS</h3>
              <div class="box">
                <ul>
-                    <li><a href="product">Asus</a></li>
+                    <li><a href="asus">Asus</a></li>
                     <li><a href="msi">MSI</a></li>
                     <li><a href="dell">Dell</a></li>
                     <li><a href="acer">Acer</a></li>

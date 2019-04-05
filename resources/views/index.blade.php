@@ -6,11 +6,9 @@
   <link rel="icon" type="image/x-icon" href="">
   <link rel="stylesheet"  type="text/css" href="{{asset('css/fontawesome-free-5.8.1-web/css/all.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-  <link href="{{asset('css/sey.css')}}" rel="stylesheet" />
+  <!-- <link href="{{asset('css/sey.css')}}" rel="stylesheet" /> -->
 </head>
 <div class="container-fluid">
-
-
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <nav class="nav"><!-- menu -->
@@ -29,8 +27,8 @@
 
       <!-- search button -->
       <div class="search-container">
-        <form action="" method="get">
-          <input type="text" placeholder="Search..." name="search">
+        <form action="" method="get" >
+          <input type="text" placeholder="Search..." name="search" style="margin-right: -627%; margin-left: 611%;" >
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
@@ -42,7 +40,7 @@
 
 
   </nav>
-  <content class="body">
+  <content class="body" style="background-color: #343a40; ">
     <div>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
@@ -70,13 +68,13 @@
         }
 
         /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
+      /*.numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }*/
 
         /* The dots/bullets/indicators */
         .dot {
@@ -172,8 +170,8 @@
         }
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 </script>
 
 </aside>
@@ -192,7 +190,7 @@
     <h3>LIST MODELS</h3>
     <div class="box">
      <ul>
-      <li><a href="product">Asus</a></li>
+      <li><a href="asus">Asus</a></li>
       <li><a href="msi">MSI</a></li>
       <li><a href="dell">Dell</a></li>
       <li><a href="acer">Acer</a></li>

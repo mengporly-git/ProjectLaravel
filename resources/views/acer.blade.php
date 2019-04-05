@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
   <link rel="icon" type="image/x-icon" href="">
-  <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
   <link rel="stylesheet"  type="text/css" href="{{asset('css/fontawesome-free-5.8.1-web/css/all.css')}}">
-  <link href="{{asset('css/sey.css')}}" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+  <!-- <link href="{{asset('css/sey.css')}}" rel="stylesheet" /> -->
 </head>
+<div class="container-fluid">
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <nav class="nav"><!-- menu -->
+      <link href="{{asset('css/sey.css')}}" rel="stylesheet" />
+      <img src="{{URL::asset('img/Fendercs.gif')}}"  width="180" height="70" style="float:left !important"/>
+      <img src="{{URL::asset('img/MSI_logo_for_share2.png')}}"  width="180" height="70" style="float:left !important"/>
+      <img src="{{URL::asset('img/ROG-NEW-ICON-black.png')}}"  width="180" height="70" style="float:left !important"/>
+      <img src="{{URL::asset('img/1110px-Intel_Inside_Logo.svg.png')}}"  width="180" height="70" style="float:left !important"/>
+      <ul>
+        <li><a href="index"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="allproduct"><i class="fab fa-product-hunt"></i>All Product</a></li>
+        <li><a href="accessory"><i class="fas fa-keyboard"></i>Accesory</a></li>
+        <li><a href="contact"><i class="fas fa-address-book"></i>Contact</a></li>
+        <li><a href="aboutUs"><i class="far fa-address-card"></i>About Us</a></li>
+      </ul>
 
-<body>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <nav class="nav"><!-- menu -->
-    <img src="{{URL::asset('img/Fendercs.gif')}}"  width="180" height="70" style="float:left !important"/>
-    <img src="{{URL::asset('img/MSI_logo_for_share2.png')}}"  width="180" height="70" style="float:left !important"/>
-    <img src="{{URL::asset('img/ROG-NEW-ICON-black.png')}}"  width="180" height="70" style="float:left !important"/>
-    <img src="{{URL::asset('img/1110px-Intel_Inside_Logo.svg.png')}}"  width="180" height="70" style="float:left !important"/>
-    <ul>
-      <li><a href="index">Home</a></li>
-      <li><a href="allproduct">All Product</a></li>
-      <li><a href="signup">RegisterNow</a></li>
-      <li><a href="accessory">Accesory</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a href="aboutUs">About Us</a></li>
-    </ul>
+      <!-- search button -->
+      <div class="search-container">
+        <form action="" method="get">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+    </div>
+
+    <img src="{{URL::asset('img/9l99.jpg')}}"  width="100%" height="170"/>
+    <img src="{{URL::asset('img/505b.jpg')}}"  width="100%" height="90" />
 
   </nav> 
 
@@ -32,12 +45,6 @@
     <style>
       * {
         box-sizing: border-box;
-      }
-
-      body {
-        background-color: #f1f1f1;
-        padding: 20px;
-        font-family: Arial;
       }
 
       /* Center website */
@@ -88,22 +95,7 @@
       }
 
       /* Style the buttons */
-      .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: white;
-        cursor: pointer;
-      }
-
-      .btn:hover {
-        background-color: #ddd;
-      }
-
-      .btn.active {
-        background-color: #666;
-        color: white;
-      }
+      
     </style>
   </head>
   <body>
@@ -232,11 +224,11 @@ for (var i = 0; i < btns.length; i++) {
 
 <aside id="left">
   <link href="{{asset('css/sey.css')}}" rel="stylesheet" />
-  <div style="padding: 0 5px;">
+  <div style="padding: 0 5px; margin-top: 10%" >
     <h3>LIST MODELS</h3>
     <div class="box">
      <ul>
-      <li><a href="product">Asus</a></li>
+      <li><a href="asus">Asus</a></li>
       <li><a href="msi">MSI</a></li>
       <li><a href="dell">Dell</a></li>
       <li><a href="acer">Acer</a></li>

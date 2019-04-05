@@ -13,7 +13,7 @@ class AsusController extends Controller
      */
     public function index()
     {
-        return view ('product');
+        return view ('asus');
     }
 
     /**
